@@ -1,0 +1,13 @@
+[package]
+name = "tl-markdown"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pulldown-cmark = "=0.10"
+serde = { version = "1.0", features = ["derive"] }
+wasm-bindgen = "0.2"
+serde-wasm-bindgen = "0.6"
+
+[lib]
+crate-type = ["cdylib"]
